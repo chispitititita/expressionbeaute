@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none">
+  <!-- Flower Emblem -->
+  <g transform="translate(4, 4)">
+    <circle cx="28" cy="28" r="26" fill="#D98A80" stroke="#320F22" stroke-width="2"/>
+    <circle cx="28" cy="28" r="24" fill="#E2948C"/>
+    
+    <!-- 16 Petals -->
+    <g stroke="#320F22" stroke-width="1.4" stroke-linejoin="round" fill="#FFF0F4">
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(0 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(22.5 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(45 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(67.5 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(90 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(112.5 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(135 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(157.5 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(180 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(202.5 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(225 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(247.5 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(270 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(292.5 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(315 28 28)"/>
+      <ellipse cx="28" cy="12" rx="4.5" ry="11" transform="rotate(337.5 28 28)"/>
+    </g>
+    
+    <!-- Center Core -->
+    <circle cx="28" cy="28" r="9" fill="#DF9732" stroke="#320F22" stroke-width="1.8"/>
+    <circle cx="25.5" cy="25" r="2.2" fill="#FFFFFF" fill-opacity="0.9"/>
+  </g>
+
+  <!-- Typography Lockup: EXPRESSION BEAUTÉ • 2026 -->
+  <text x="74" y="32" font-family="'Syne', 'Hanken Grotesk', sans-serif" font-weight="700" font-size="20" letter-spacing="3" fill="#320F22">EXPRESSION</text>
+  <text x="75" y="49" font-family="'Hanken Grotesk', sans-serif" font-weight="600" font-size="11" letter-spacing="4" fill="#954832">BEAUTÉ • 2026</text>
+</svg>

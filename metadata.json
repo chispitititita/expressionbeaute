@@ -1,0 +1,6 @@
+{
+  "name": "Expresión Beauté 2026",
+  "description": "Boutique digital de alta cosmética y rubor en crema sensorial con diagnóstico de subtono, garantía de tono exacto y probador interactivo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

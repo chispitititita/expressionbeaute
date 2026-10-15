@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", sans-serif;
+  --font-body: "Hanken Grotesk", sans-serif;
+
+  --color-primary: #50172f;
+  --color-primary-container: #6b2d45;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #e997b2;
+  --color-primary-fixed: #ffd9e3;
+  --color-primary-fixed-dim: #ffb0c9;
+  --color-on-primary-fixed: #3b051e;
+
+  --color-secondary: #954832;
+  --color-secondary-container: #ff9d81;
+  --color-on-secondary: #ffffff;
+  --color-secondary-fixed: #ffdbd1;
+  --color-secondary-fixed-dim: #ffb5a0;
+
+  --color-tertiary: #491e29;
+  --color-tertiary-container: #64333f;
+  --color-tertiary-fixed: #ffd9df;
+  --color-tertiary-fixed-dim: #f9b4c1;
+
+  --color-surface: #fff8f8;
+  --color-surface-dim: #ffcce2;
+  --color-surface-bright: #fff8f8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fff0f4;
+  --color-surface-container: #ffe8f0;
+  --color-surface-container-high: #ffe0ec;
+  --color-surface-container-highest: #ffd8e8;
+
+  --color-on-surface: #320f22;
+  --color-on-surface-variant: #524347;
+  --color-outline: #847377;
+  --color-outline-variant: #d6c1c6;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Animations */
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(1.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slideLeft {
+  animation: slideLeft 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fff0f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6c1c6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #847377;
+}

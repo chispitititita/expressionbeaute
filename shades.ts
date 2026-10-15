@@ -1,0 +1,188 @@
+import { Shade, IngredientInfo, ReviewItem } from '../types';
+
+export const PRODUCT_IMAGE_URL =
+  'https://lh3.googleusercontent.com/aida-public/AB6AXuCQtulWf_ZwcbERjhyS-V3SidTWl5e4ZPBRgF1XLbr2Mex1RBuCZCjfjhr8ZhLsHGKIHCrqrd6w5_W2m5cPV8TF98x2ldPRIcRsAqTwxqdZpxuZsXWvTDlk9ts3cIiETnmGz48r_HzRShm6ZthWge1IkPZVN1bnGlTqGaeBvYZ8LMQHYvo19sKrgmihy2WbK66tr3KhViQjpYxyzPPmvAUpr0h4YVqEW7rUwcucIV9SkGOj41z4W8iv';
+
+export const LOGO_IMAGE_URL =
+  'https://lh3.googleusercontent.com/aida/AEtjO1W5UpBWouE3uUjC_KvchACSixCZYLN-cuo1tLb6M2OGMzRsbyel2ndhrBD-W4abLcKPuDqhPcnGO-x_vjXCQUQeZXJ8mqA6sefg9rHoh2odEKRYmETCFO6JKZyCG11V-dVkT1YV11YDpL7t23WjJUC8KIbdFMzGGz-YgSNyRjD8T05GVBIbR-hgrtiBEJ7io_8t_X_xZ1OnwWxnCjIz470K6G5Ufy9UzhS21IgKN-cry1unWI2hWo9N0Q';
+
+export const SHADES: Shade[] = [
+  {
+    id: 'ballet-rose',
+    name: 'Ballet Rose',
+    line: 'Línea Ballet Blush',
+    hex: '#E79AA8',
+    badge: 'Stock Disponible',
+    badgeType: 'stock',
+    subtone: 'frio',
+    subtoneLabel: 'Subtono Frío • Luminoso',
+    price: 28.0,
+    description:
+      'Rosa etéreo traslúcido con halo frío cristalino. Ilumina tez pálida y aporta frescura inmediata con acabado piel de cristal.',
+    finish: 'Rocío traslúcido micro-perlado',
+    idealFor: 'Pieles claras a medias con subtono rosado o neutro',
+    swatchGradient: 'linear-gradient(135deg, #f7c5ce 0%, #E79AA8 100%)',
+    macroNotes: 'Partículas de mica japonesa recubiertas con aminoácidos sedosos.',
+  },
+  {
+    id: 'nude-terracota',
+    name: 'Nude Terracota',
+    line: 'Colección Otoño-Invierno',
+    hex: '#C67262',
+    badge: 'Más Vendido',
+    badgeType: 'bestseller',
+    subtone: 'calido',
+    subtoneLabel: 'Subtono Cálido • Aterciopelado',
+    price: 28.0,
+    description:
+      'Terracota cálido aterciopelado inspirado en arcilla toscana. Efecto piel besada por el sol invernal con calidez envolvente.',
+    finish: 'Satinado terciopelo de segunda piel',
+    idealFor: 'Pieles medias, cetrinas, trigueñas y doradas',
+    swatchGradient: 'linear-gradient(135deg, #df9182 0%, #C67262 100%)',
+    macroNotes: 'Extracto de manteca de murumuru y escualano vegetal bio-fermentado.',
+  },
+  {
+    id: 'bronce-solar',
+    name: 'Bronce Solar',
+    line: 'Efecto Esculpido',
+    hex: '#B87B56',
+    badge: 'Stock Disponible',
+    badgeType: 'stock',
+    subtone: 'calido',
+    subtoneLabel: 'Subtono Cálido • Dorado',
+    price: 28.0,
+    description:
+      'Bronce dorado satinado enriquecido con mica recubierta para resaltar pómulos y sienes con calidez dimensional.',
+    finish: 'Bronceado luminoso sin purpurina',
+    idealFor: 'Pieles medias a morenas que buscan efecto lifting y contorno cálido',
+    swatchGradient: 'linear-gradient(135deg, #cf9773 0%, #B87B56 100%)',
+    macroNotes: 'Pigmentos foto-adaptativos que reflejan luz difusa bajo cualquier foco.',
+  },
+  {
+    id: 'deep-plum',
+    name: 'Deep Plum',
+    line: 'Pieles Medias y Morenas',
+    hex: '#6B2D45',
+    badge: 'Ultra Pigmentado',
+    badgeType: 'pigment',
+    subtone: 'profundo',
+    subtoneLabel: 'Subtono Neutro • Intenso',
+    price: 28.0,
+    description:
+      'Ciruela profundo aterciopelado. Formulado para no verse cenizo en tez oliva, bronceada o morena oscura con impacto radiante.',
+    finish: 'Velvet cremoso ultra pigmentado',
+    idealFor: 'Tez oliva, canela, morena y pieles de tono intenso',
+    swatchGradient: 'linear-gradient(135deg, #883e5a 0%, #6B2D45 100%)',
+    macroNotes: 'Óxidos de hierro grado farmacéutico encapsulados en ceramidas.',
+  },
+  {
+    id: 'mauve-silvestre',
+    name: 'Mauve Silvestre',
+    line: 'Línea Ballet Blush',
+    hex: '#9C6B82',
+    badge: 'Stock Disponible',
+    badgeType: 'stock',
+    subtone: 'frio',
+    subtoneLabel: 'Subtono Frío • Neutro',
+    price: 28.0,
+    description:
+      'Malva orgánico neutro con microperlas frías. Perfecto para un look de oficina fresco o sofisticación nocturna sublime.',
+    finish: 'Satinado translúcido difuminable',
+    idealFor: 'Todos los tonos de piel, especialmente subtonos neutros o fríos',
+    swatchGradient: 'linear-gradient(135deg, #b88a9f 0%, #9C6B82 100%)',
+    macroNotes: 'Fórmula enriquecida con aceite de semilla de jojoba virgen prensado en frío.',
+  },
+  {
+    id: 'berry-crimson',
+    name: 'Berry Crimson',
+    line: 'Colección Otoño-Invierno',
+    hex: '#85293B',
+    badge: 'Stock Disponible',
+    badgeType: 'stock',
+    subtone: 'profundo',
+    subtoneLabel: 'Subtono Cálido/Profundo • Rubí',
+    price: 28.0,
+    description:
+      'Rojo carmesí de bayas silvestres. Emula el sonrojo natural de un paseo en frío nórdico con acabado gloss fresco y juvenil.',
+    finish: 'Jelly velvet con brillo saludable',
+    idealFor: 'Quienes desean rubor rubí jugoso de larga duración (hasta 16h)',
+    swatchGradient: 'linear-gradient(135deg, #a73c52 0%, #85293B 100%)',
+    macroNotes: 'Vitamina C liposomal y tocoferol puro antifatiga celular.',
+  },
+];
+
+export const INGREDIENTS_DETAIL: IngredientInfo[] = [
+  {
+    name: 'Ácido Hialurónico de Ultra Bajo Peso Molecular',
+    inci: 'Sodium Hyaluronate (Oligo)',
+    function: 'Hidratación multicapa y relleno dérmico',
+    concentration: '1.8%',
+    origin: 'Biotecnología por bio-fermentación vegetal',
+    benefits: 'Penetra hasta capas profundas de la epidermis fijando hidratación continua y previniendo acumulación en líneas de expresión.',
+  },
+  {
+    name: 'Vitamina E Activa Natural (D-Alfa Tocoferol)',
+    inci: 'Tocopherol',
+    function: 'Antioxidante y preservante bio-activo',
+    concentration: '2.5%',
+    origin: 'Extracción botánica de girasol no transgénico',
+    benefits: 'Neutraliza radicales libres generados por contaminación urbana y radiación azul emitida por pantallas digitales.',
+  },
+  {
+    name: 'Mica Ética Tratada con Lauroil Lisina',
+    inci: 'Mica (CI 77019), Lauroyl Lysine',
+    function: 'Refracción lumínica omnidireccional',
+    concentration: '4.0%',
+    origin: 'Minería ética certificada con trazabilidad infantil cero',
+    benefits: 'Aporta un deslizamiento sedoso impidiendo que el rubor se sienta pegajoso o reseco en la mejilla.',
+  },
+  {
+    name: 'Escualano Puro de Oliva Española',
+    inci: 'Squalane',
+    function: 'Restauración de barrera lipídica cutánea',
+    concentration: '12.0%',
+    origin: 'Oliva virgen extra prensada en frío en Andalucía',
+    benefits: 'Imita los lípidos naturales de la piel facilitando la fusión térmica instantánea a 36.5°C al contacto con los dedos.',
+  },
+  {
+    name: 'Manteca de Murumuru Amazónica',
+    inci: 'Astrocaryum Murumuru Seed Butter',
+    function: 'Emoliente de película flexible transpirable',
+    concentration: '6.5%',
+    origin: 'Comunidades recolectoras sostenibles en Brasil',
+    benefits: 'Proporciona una fijación flexible sin bloquear la respiración celular ni causar puntos negros o comedones.',
+  },
+];
+
+export const COMMUNITY_REVIEWS: ReviewItem[] = [
+  {
+    id: 'rev-1',
+    author: 'Valeria M.',
+    verified: true,
+    skinTone: 'Tez Clara Cálida (NC20)',
+    shade: 'Nude Terracota',
+    rating: 5,
+    date: 'Hace 3 días',
+    comment: 'Se funde inmediatamente al tocar la piel. No marca mis poros y el tono da ese sonrojo tostado que siempre busqué.',
+  },
+  {
+    id: 'rev-2',
+    author: 'Camila S.',
+    verified: true,
+    skinTone: 'Tez Media Fría (NW25)',
+    shade: 'Ballet Rose',
+    rating: 5,
+    date: 'Hace 1 semana',
+    comment: 'La textura crema-polvo es insuperable. Me duró intacto durante una jornada de 12 horas en el hospital sin retoques.',
+  },
+  {
+    id: 'rev-3',
+    author: 'Lucía B.',
+    verified: true,
+    skinTone: 'Tez Morena Oliva',
+    shade: 'Deep Plum',
+    rating: 5,
+    date: 'Hace 2 semanas',
+    comment: 'Por fin un rubor ciruela que en piel oliva no se oxida a gris. Tiene una pigmentación altísima y deja un halo divino.',
+  },
+];
